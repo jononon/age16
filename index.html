@@ -110,7 +110,7 @@ body {
   </div>
   <div id="coal" class=infoPopup>
     <div class="innerInfoPopup">
-      <div style="padding-left:5px; padding-top:5px;position:absolute;">
+      <div style="padding-left:5px; padding-top:5px;position:absolute;z-index:999">
         <button type="button" class="btn btn-light" onclick="goToHome()">←</button>
       </div>
       <div class="container" style="overflow-y:auto;height:100%;padding-bottom:40px">
@@ -250,6 +250,55 @@ body {
           </div>
           <div class="col-lg-6 col-md-12" style="padding-top:40px">
             When my dad was in high school, he worked for a Ford dealership in Hazelton washing, delivering, and transporting cars. My dad happened to be 16 during the oil crisis and saw a decline in demand for American cars firsthand. 
+          </div>
+          <div class="col-lg-6 col-md-12" style="padding-top:40px">
+            <img src="images/nogas.jpg" width="100%">
+            <p style="font-size:9"> Leon Mill spray-paints a sign outside his Phillips 66 station in Perkasie, Pa., in 1973 to let his customers know he's out of gas., photograph, https://i.pinimg.com/736x/98/c8/93/98c893bfebccd2550695aa9fedf10b3e--energy-crisis-phillips-.jpg.</p>
+          </div>
+          <div class="col-lg-12 col-md-12" style="padding-top:40px">
+            <img src="images/Oil_Prices_Since_1861.png">
+            <p style="font-size:9;max-width:880px">Graph of oil prices from 1861–2015, showing a sharp increase in 1973, chart, Wikimedia, http://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Oil_Prices_Since_1861.svg/880px-Oil_Prices_Since_1861.svg.png.</p>
+          </div>
+          <div class="col-lg-6 col-md-12" style="padding-top:40px">
+            <img src="images/heathrowoil.jpg" width="100%">
+            <p style="font-size:9"> Cars lined up for gas, 1978, photograph, https://s3.amazonaws.com/s3.timetoast.com/public/uploads/photos/11877323/download-5.jpg?1524231128.</p>
+          </div>
+          <div class="col-lg-6 col-md-12" style="padding-top:40px">
+            <img src="images/iranrevolution.jpg" width="100%">
+            <p style="font-size:9"> The Great Rally of Peoplle, Ashura day, 1978, photograph, https://ggazelle.files.wordpress.com/2011/04/ashura-57-05.jpg.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="gov" class=infoPopup>
+    <div class="innerInfoPopup">
+      <div style="padding-left:5px; padding-top:5px;position:absolute;">
+        <button type="button" class="btn btn-light" onclick="goToHome()">←</button>
+      </div>
+      <div class="container" style="overflow-y:auto;height:100%;padding-bottom:40px">
+        <div class="row">
+          <div class="col-lg-12" style="padding-top:40px">
+            <h4>Politcs</h4>
+          </div>
+          <div class="col-lg-6 col-md-12" style="padding-top:40px">
+            When my dad was in high school, he worked for a Ford dealership in Hazelton washing, delivering, and transporting cars. My dad happened to be 16 during the oil crisis and saw a decline in demand for American cars firsthand. 
+          </div>
+          <div class="col-lg-6 col-md-12" style="padding-top:40px">
+            <img src="images/nogas.jpg" width="100%">
+            <p style="font-size:9"> Leon Mill spray-paints a sign outside his Phillips 66 station in Perkasie, Pa., in 1973 to let his customers know he's out of gas., photograph, https://i.pinimg.com/736x/98/c8/93/98c893bfebccd2550695aa9fedf10b3e--energy-crisis-phillips-.jpg.</p>
+          </div>
+          <div class="col-lg-12 col-md-12" style="padding-top:40px">
+            <img src="images/Oil_Prices_Since_1861.png">
+            <p style="font-size:9;max-width:880px">Graph of oil prices from 1861–2015, showing a sharp increase in 1973, chart, Wikimedia, http://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Oil_Prices_Since_1861.svg/880px-Oil_Prices_Since_1861.svg.png.</p>
+          </div>
+          <div class="col-lg-6 col-md-12" style="padding-top:40px">
+            <img src="images/heathrowoil.jpg" width="100%">
+            <p style="font-size:9"> Cars lined up for gas, 1978, photograph, https://s3.amazonaws.com/s3.timetoast.com/public/uploads/photos/11877323/download-5.jpg?1524231128.</p>
+          </div>
+          <div class="col-lg-6 col-md-12" style="padding-top:40px">
+            <img src="images/iranrevolution.jpg" width="100%">
+            <p style="font-size:9"> The Great Rally of Peoplle, Ashura day, 1978, photograph, https://ggazelle.files.wordpress.com/2011/04/ashura-57-05.jpg.</p>
           </div>
         </div>
       </div>
@@ -583,6 +632,30 @@ body {
             
           });
 
+          // var gov = new google.maps.Marker({
+          //   position: new google.maps.LatLng(40.958643, -75.973572),
+          //   label:"Politics",
+          //   labelOrigin: new google.maps.Point(100,33),
+          //   animation: google.maps.Animation.DROP,
+          //   map: map
+          // });
+          
+          // gov.addListener('click', function () {
+          //   map.setMapTypeId("satellite");
+          //   map.panTo(gov.position);
+          //   map.setZoom(17);
+          //   // smoothZoom(map, 17, map.getZoom());
+          //   $("#interstitial").css("z-index", 10);
+          //   $("#interstitial").toggleClass("animated", true);
+          //   $("#interstitial").toggleClass("fadeOut", false);
+          //   $("#interstitial").toggleClass("fadeIn", true);
+          //   $("#gov").show();
+          //   $("#gov").toggleClass("animated", true);
+          //   $("#gov").toggleClass("fadeOut", false);
+          //   $("#gov").toggleClass("fadeIn", true);
+            
+          // });
+
         }
 
         function goToHome() {
@@ -601,11 +674,15 @@ body {
           $("#ford").toggleClass("animated", true);
           $("#ford").toggleClass("fadeOut", true);
           $("#ford").toggleClass("fadeIn", false);
+          $("#gov").toggleClass("animated", true);
+          $("#gov").toggleClass("fadeOut", true);
+          $("#gov").toggleClass("fadeIn", false);
           setTimeout(function() { 
             $("#coal").hide();
             $("#movietheatre").hide();
             $("#home").hide();
             $("#ford").hide();
+            $("#gov").hide();
             $("#interstitial").css("z-index", -999);
           }, 1000);    
           map.setMapTypeId("roadmap");
@@ -617,6 +694,7 @@ body {
         $("#movietheatre").hide();
         $("#home").hide();
         $("#ford").hide();
+        $("#gov").hide();
 
         $('#coalCarousel').on('slide.bs.carousel', function (e) {
           switch (e.to) {
